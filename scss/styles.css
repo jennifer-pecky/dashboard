@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #dfe9f5;
+  background: black;
 }
 
 nav {
@@ -20,6 +22,10 @@ nav {
   width: 280px;
   overflow: hidden;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+  display: flex;
 }
 
 .logo {
@@ -53,4 +59,36 @@ nav {
 
 .second-nav {
   margin-top: 40px;
+}
+
+.third-nav {
+  margin-top: 50px;
+}
+
+.logout {
+  display: flex;
+  padding: 17px;
+  margin-top: 70px;
+  gap: 10px;
+}
+.logout img {
+  width: 20px;
+}
+.logout h2 {
+  font-size: 15px;
+}
+
+.nav-box {
+  background-color: #fff;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.navlinks {
+  display: flex;
+  gap: 20px;
+  display: flex;
+}
+.navlinks a {
+  color: black;
 }/*# sourceMappingURL=styles.css.map */
