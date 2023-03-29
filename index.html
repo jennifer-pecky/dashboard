@@ -6,86 +6,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/styles.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+        integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Dashboard</title>
 </head>
 
 <body>
-    <section class="section">
-        <nav>
-            <div>
-                <h1 class="logo">FlixNet <span class="red">.</span></h1>
-                <div class="head">
-                    <h3 class="menu">Menu</h3>
-                    <div class="menu-list">
-                        <div class="list">
-                            <img src="./images/browsing.png" alt="" />
-                            <h4>Browse</h4>
-                        </div>
-                        <div class="list">
-                            <img src="./images/list.png" alt="" />
-                            <h4>Watchlist</h4>
-                        </div>
-                        <div class="list">
-                            <img src="./images/coming-soon.png" alt="" />
-                            <h4>Coming soon</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="second-nav">
-                <div class="head">
-                    <h3 class="menu">Socials</h3>
-                    <div class="menu-list">
-                        <div class="list">
-                            <img src="./images/browsing.png" alt="" />
-                            <h4>Friends</h4>
-                        </div>
-                        <div class="list">
-                            <img src="./images/list.png" alt="" />
-                            <h4>Users</h4>
-                        </div>
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <div class="brand-flex">
+                <img src="images/logo.png" width="47px" alt="" />
 
-                    </div>
-                </div>
-            </div>
-            <div class="third-nav">
-                <div class="head">
-                    <h3 class="menu">General</h3>
-                    <div class="menu-list">
-                        <div class="list">
-                            <img src="./images/settings.png" alt="" />
-                            <h4>Settings</h4>
-                        </div>
-                        <div class="list">
-                            <img src="./images/logout.png" alt="" />
-                            <h4>Logout</h4>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="logout">
-                <img src="./images/logout.png" alt="">
-                <h2>Logout</h2>
-            </div>
-        </nav>
-
-
-        <div>
-            <div class="nav-box">
-                <div class="navlinks">
-                    <a href="">Home</a>
-                    <a href="">Tv Shows</a>
-                    <a href="">Web Shows</a>
-                    <a href="">Movies</a>
-                    <a href="">Channels</a>
-                    <a href="">Music</a>
-                    <a href="">Buzz</a>
+                <div class="brand-icons">
+                    <span class="las la-bell"></span>
+                    <span class="las la-user-circle"></span>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="sidebar-main">
+            <div class="sidebar-user">
+                <img src="images/admin.jpg" alt="admin image" />
+                <div>
+                    <h3>Admin User</h3>
+                    <span>clipmovie@gmail.com</span>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="menu-head">
+                    <span>Dashboard</span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="las la-chart-line"></span>
+                            Total Movies
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-chart-pie"></span>
+                            Analytics
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu-head">
+                    <span>Registered users</span>
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="las la-user-times"></span>
+                            Users
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-shopping-cart"></span>
+                            E-commerce
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-envelope"></span>
+                            Mailbox
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="las la-check-circle"></span>
+                            Tasks
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <span class="bars"></span>
+
+            <div>
+                <span class="las la-search"></span>
+                <span class="las las-bookmark"></span>
+                <span class="las la-sms"></span>
+            </div>
+        </header>
+        <main>
+            <div>
+                <h1>Analytics Dashboard</h1>
+                <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis,
+                    modi!</small>
+            </div>
+            <div>
+                <button>
+                    <span class="las la-file-export"></span>
+                    Export
+                </button>
+                <button>
+                    <span class="las la-tools"></span>
+                    settings
+                </button>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>

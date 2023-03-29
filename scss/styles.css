@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,88 +8,85 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  background: black;
+  font-family: "Poppins", sans-serif !important;
 }
 
-nav {
-  padding: 20px;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  left: 0;
-  background: #fff;
+.sidebar {
   width: 280px;
-  overflow: hidden;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  background: black;
+  color: #fff;
 }
 
-.section {
+.sidebar-brand {
+  height: 100px;
+}
+
+.brand-flex {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo {
-  margin-bottom: 30px;
-  font-size: 40px;
-}
-.logo .red {
-  color: red;
+.brand-icons span {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
 }
 
-.menu {
-  font-size: 13px;
-  color: gray;
+.sidebar-user {
+  margin: 1rem 0rem;
+  text-align: center;
+}
+.sidebar-user img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-right: 2px solid #1a202e;
+  border-bottom: 2px solid #1a202e;
+  border-top: 2px solid black;
 }
 
-.menu-list {
-  flex-direction: column;
-  margin-top: 30px;
-  cursor: pointer;
+.sidebar-user h3 {
+  font-size: 13m;
 }
-.menu-list .list {
+.sidebar-user h3 span {
+  font-size: 0.8rem;
+}
+
+.sidebar-menu {
+  margin-top: 3rem;
+}
+.sidebar-menu ul {
+  margin-bottom: 1.5rem;
+}
+.sidebar-menu li {
+  margin-bottom: 0.9rem;
+}
+.sidebar-menu li a {
+  color: #fff;
+  font-size: 0.9rem;
   display: flex;
-  margin-top: 12%;
-  gap: 1rem;
-  font-size: 13px;
-  color: rgb(107, 101, 101);
+  align-items: center;
 }
-.menu-list img {
-  width: 15px;
-}
-
-.second-nav {
-  margin-top: 40px;
+.sidebar-menu span {
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: 0.8rem;
 }
 
-.third-nav {
-  margin-top: 50px;
+.menu-head {
+  text-transform: uppercase;
+  color: #ef4f23;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
 }
 
-.logout {
-  display: flex;
-  padding: 17px;
-  margin-top: 70px;
-  gap: 10px;
-}
-.logout img {
-  width: 20px;
-}
-.logout h2 {
-  font-size: 15px;
-}
-
-.nav-box {
-  background-color: #fff;
-  width: 100%;
-  max-width: 1280px;
-}
-
-.navlinks {
-  display: flex;
-  gap: 20px;
-  display: flex;
-}
-.navlinks a {
-  color: black;
+.main-content {
+  margin-left: 280px;
 }/*# sourceMappingURL=styles.css.map */
