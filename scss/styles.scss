@@ -30,7 +30,7 @@ body {
 }
 
 .sidebar-brand{
-  height: 100px;
+  height: 70px;
 }
 
 .brand-flex{
@@ -45,7 +45,7 @@ body {
 }
 
 .sidebar-user{
-  margin: 1rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
   text-align: center;
   img{
     width: 110px;
@@ -93,6 +93,163 @@ body {
   margin-bottom: .8rem;
 }
 
+header {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #efefef;
+  padding: 1rem 1.5rem;
+}
+
+.menu-toggle label{
+  height: 60px;
+  width: 60px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+
+.header-icons span {
+  display: inline-block;
+  margin-left: .7rem;
+  font-size: 1.4rem;
+}
+
+.menu-toggle label:hover{
+ background: #efefef;
+}
+
 .main-content {
   margin-left: 280px;
+}
+
+main{
+  padding: 1.5rem;
+  background: #f1f5f9;
+  min-height: calc(100vh - 70px);
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-action button{
+  outline: none;
+  color: #fff;
+  background: black;
+  border: none;
+  padding: .6rem 1rem;
+  margin-left: 1rem;
+  border-radius: 3px;
+  font-weight: 600;
+} 
+.header-action button span{
+  font-size: 1.2rem;
+  margin-right: .6rem;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  margin-top: 2rem;
+}
+
+.card-single{
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+  border-radius: 2px;
+}
+
+.card-flex {
+  display: grid;
+  grid-template-columns: 70% auto;
+  align-items: center;
+}
+
+.card-head i {
+  display: block;
+  text-transform: uppercase;
+  color: #555;
+  small{
+    font-weight: 600;
+    color: red;
+  }
+}
+
+.card-info h2{
+  font-size: 2.2rem;
+  color: #333;
+}
+
+.card-chart i {
+  font-size: 5rem;
+}
+
+.card-chart.success i{
+  color: seagreen;
+}
+.card-chart.danger i{
+  color: tomato;
+}
+.card-chart.yellow i{
+  color: orangered;
+}
+
+.job-grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: auto 66%;
+  grid-gap: 3rem;
+}
+
+.analytics-card{
+  background: #fff;
+  padding: 1.5rem;
+  button{
+    display: block;
+    padding: .6rem 1rem;
+    width: 100%;
+    height: 45px;
+    background:  #ef4f23;
+    color: #fff;
+    border: 1px solid  #ef4f23;
+    border-radius: 3px;
+  }
+}
+
+.analytics-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  span{
+    font-size: 1.5rem;
+  }
+}
+
+.analytics-chart small{
+  font-weight: 600;
+  color: #555;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.chart-circle{
+  height: 150px;
+  width: 150px;
+  border-left: 14px solid transparent;
+  border-right: 14px solid  #ef4f23;
+  border-bottom: 14px solid  #ef4f23;
+  border-top: 14px solid  #ef4f23;
+  display: grid;
+  place-items: center;
+  margin: auto;
+  border-radius: 50%;
+  margin-bottom: 3rem;
 }
